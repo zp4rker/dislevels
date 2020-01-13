@@ -7,7 +7,7 @@ import net.dv8tion.jda.api.hooks.AnnotatedEventManager
 
 fun main() {
     JDABuilder(AccountType.BOT).run {
-        setToken("Mzg3NDQ5MzYxMTExNzExNzU2.DWqOqg.p0bxOU2kKhFtyPDdputuDFTKKHg")
+        setToken("TOKEN")
         setEventManager(AnnotatedEventManager())
         addEventListeners(MessageListener())
         build()
