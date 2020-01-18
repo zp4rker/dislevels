@@ -17,6 +17,10 @@
             <id>zp4rker</id>
             <url>https://maven.zp4rker.com</url>
         </repository>
+        <repository>
+            <id>bintray</id>
+            <url>https://jcenter.bintray.com</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -24,6 +28,21 @@
             <groupId>com.zp4rker</groupId>
             <artifactId>discore</artifactId>
             <version>2.4.1</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.18</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains.exposed</groupId>
+            <artifactId>exposed-core</artifactId>
+            <version>0.20.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains.exposed</groupId>
+            <artifactId>exposed-jdbc</artifactId>
+            <version>0.20.2</version>
         </dependency>
     </dependencies>
 

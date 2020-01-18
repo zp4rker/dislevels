@@ -26,14 +26,14 @@ class MessageListener {
 
         if (userDatas.containsKey(event.author.id)) {
             val data = userDatas[event.author.id]!!
-            data.exp += random
+            data.experience += random
             userDatas.replace(event.author.id, data)
         } else {
-            val data = UserData(event.author.id, random)
+            val data = UserData(event.author.id, event.guild.id).apply { experience += random }
             userDatas[event.author.id] = data
         }
 
-        event.channel.sendMessage("${event.author.name} now has ${userDatas[event.author.id]!!.exp} xp!").queue()
+        event.channel.sendMessage("${event.author.name} now has ${userDatas[event.author.id]!!.experience} xp!").queue()
 
 
         cooldown.add(event.author.id)
